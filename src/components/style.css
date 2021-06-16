@@ -1,5 +1,9 @@
 *, ::after, ::before {
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .app-wrapper {
@@ -10,36 +14,6 @@
   grid-template-areas: 
   "header header" 
   "nav content";
-}
-
-.header {
-  grid-area: header;
-  background: green;
-}
-
-header img {
-  height: 100%;
-  width: auto;
-}
-
-.nav {
-  grid-area: nav;
-  background: rgb(68, 74, 151);
-}
-
-.nav a {
-  color: #000;
-  text-decoration: none;
-}
-
-.content {
-  grid-area: content;
-  background: rgb(128, 119, 0);
-}
-
-.content img {
-  width: 100%;
-  height: auto;
 }
 
 .box {
