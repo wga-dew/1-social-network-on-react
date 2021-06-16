@@ -1,0 +1,88 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.app-wrapper {
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  grid-template-areas: 
+  "header header" 
+  "nav content";
+}
+
+.header {
+  grid-area: header;
+  background: green;
+}
+
+header img {
+  height: 100%;
+  width: auto;
+}
+
+.nav {
+  grid-area: nav;
+  background: rgb(68, 74, 151);
+}
+
+.nav a {
+  color: #000;
+  text-decoration: none;
+}
+
+.content {
+  grid-area: content;
+  background: rgb(128, 119, 0);
+}
+
+.content img {
+  width: 100%;
+  height: auto;
+}
+
+.box {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 1.5rem!important;
+  padding-left: 1.5rem!important;
+}
+
+.d-f {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 576px) {
+  .box {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .box {
+    max-width: 720px;
+    padding-right: 1rem!important;
+    padding-left: 1rem!important;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .box {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .box {
+    max-width: 1320px;
+  }
+}
