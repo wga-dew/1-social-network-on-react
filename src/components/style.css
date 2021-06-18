@@ -16,6 +16,15 @@
   "nav content";
 }
 
+.app-wrapper__content {
+  grid-area: content;
+}
+
+.app-wrapper__content img {
+  width: 100%;
+  height: auto;
+}
+
 .box {
   width: 100%;
   margin: 0 auto;

@@ -1,0 +1,16 @@
+.message {
+  align-self: flex-start;
+  max-width: 40%;
+  background: #effdde;
+  flex-basis: content;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.message:nth-child(n):not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.text {
+  color: #000;
+}

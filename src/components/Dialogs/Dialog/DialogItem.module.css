@@ -1,0 +1,22 @@
+.dialog {
+  padding: 20px 10px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  background: #fff;
+}
+
+.dialogName {
+  color: #000;
+}
+
+.dialogNav.active .dialog {
+  background: #0088cc;
+}
+
+.dialogNav.active .dialogName {
+  color: #fff;
+}
+
+.dialog:hover {
+  background: rgba(128, 128, 128, .5);
+}
